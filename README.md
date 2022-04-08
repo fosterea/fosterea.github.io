@@ -1,1 +1,1 @@
-# Personal Website to showcase past projects
+# Personal Website to Showcase Past Projects

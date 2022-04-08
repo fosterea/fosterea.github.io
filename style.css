@@ -1,0 +1,12 @@
+.nav-bar {
+    background: rgba(255, 255, 255, 0.74);
+    text-align: right;
+}
+
+section {
+
+}
+
+section:hover {
+    background:rgba(255, 255, 255, 0.74);
+}
