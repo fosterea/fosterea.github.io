@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //Sets the font-size of the page if on mobile
     let r = document.querySelector(':root');
 
-    r.style.setProperty('--skillWidth', '24%');
+    r.style.setProperty('--skillWidth', '25%');
+    r.style.setProperty('--mlHeight', '60%');
   } else {
     //Sets the font-size of the page if not on mobile
     
