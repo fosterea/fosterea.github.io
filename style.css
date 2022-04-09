@@ -1,12 +1,85 @@
-.nav-bar {
-    background: rgba(255, 255, 255, 0.74);
+:root {
+    --skillWidth: min(24%, 150px)
+}
+
+html, body, main {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 30px;
+}
+
+#navbar-override {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 2;
+}
+
+nav div.navbar-nav {
     text-align: right;
 }
 
-section {
-
+.section {
+    padding: 5% 20% 5% 20%;
 }
 
-section:hover {
-    background:rgba(255, 255, 255, 0.74);
+.section:hover {
+    background:aliceblue
+}
+
+.about-card {
+    background-color: hsl(184, 63%, 64%);
+    display: flex;
+    border-radius: 10px;
+    width: min(100%, 700px);
+  }
+  
+.my-card-img {
+    align-self: flex-end;
+    margin: 12.5% 0 12.5% 0;
+    border-radius: 50%;
+    height: 80%;
+    transform: translateX(-50%); /* additional 50% of own height */
+    box-shadow: 0 0 0 10px hsl(184, 63%, 64%);
+    
+}
+.about-image-container {
+    display: block;
+    height: 100%;
+}
+
+.about-text {
+    display: block;
+    transform: translateX(-20%); /* additional 50% of own height */
+}
+
+.section-header {
+    text-align: left;
+    font-size: 20pt;
+    margin: 1% 0 1% 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: var(--skillWidth) var(--skillWidth) var(--skillWidth) var(--skillWidth);
+    grid-template-rows: 12% 12% 12% 12%;
+    gap: 10px;
+}
+
+skill {
+    border-radius: 5px;
+    background: rgba(240, 240, 240);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    justify-content:space-between ;
+}
+
+.skill-image {
+    margin: 1px;
+    height: 100%;
 }
