@@ -1,6 +1,7 @@
 :root {
     --skillWidth: max(min(24%, 200px),175px);
     --skillHeight: 40px;
+    --my-blue: hsl(184, 63%, 80%);
 }
 
 html, body, main {
@@ -23,28 +24,41 @@ nav div.navbar-nav {
     text-align: right;
 }
 
-.section {
+/* .section {
     padding: 5% 20% 5% 20%;
+} */
+
+.section-inner {
+    padding: 5% 0 5% 0;
+    width: 80%;
+    margin: auto;
+}
+
+#skills {
+    padding: 0;
 }
 
 .section:hover {
     background:aliceblue
 }
 
+
 .about-card {
-    background-color: hsl(184, 63%, 64%);
+    margin: 2vh 10% 2vh 10%;
+    background-color: var(--my-blue);
     display: flex;
     border-radius: 10px;
     width: min(100%, 700px);
   }
   
 .my-card-img {
+    max-height: 200px;
     align-self: flex-end;
     margin: 12.5% 0 12.5% 0;
     border-radius: 50%;
     height: 80%;
     transform: translateX(-50%); /* additional 50% of own height */
-    box-shadow: 0 0 0 10px hsl(184, 63%, 64%);
+    box-shadow: 0 0 0 6px var(--my-blue);
     
 }
 .about-image-container {
@@ -54,7 +68,7 @@ nav div.navbar-nav {
 
 .about-text {
     display: block;
-    transform: translateX(-20%); /* additional 50% of own height */
+    transform: translateX(-15%); /* additional 50% of own height */
 }
 
 .section-header {
@@ -91,3 +105,4 @@ skill p {
     vertical-align: middle;
     margin: auto;
 }
+
