@@ -107,6 +107,7 @@ skill {
 .skill-image {
     /* margin: 1px; */
     height: 100%;
+    
 }
 
 skill p {
@@ -124,7 +125,7 @@ skill p {
         row-gap: 1.33%;
     }
     :root {
-        --skillWidth: 45%;
+        --skillWidth: 48.66%;
     }
     
     .about-image-container {
@@ -162,5 +163,10 @@ skill p {
     .about-text {
         transform: none;
         padding-top: 3vh;
+    }
+
+    .skill-image {
+        max-height: 100%;
+        max-width: 80%;
     }
 }
