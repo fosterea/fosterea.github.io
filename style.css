@@ -65,21 +65,28 @@ nav div.navbar-nav {
 .skills-grid {
     display: grid;
     grid-template-columns: var(--skillWidth) var(--skillWidth) var(--skillWidth) var(--skillWidth);
-    grid-template-rows: 12% 12% 12% 12%;
+    /* grid-template-rows: 12% 12% 12% 12%; */
     gap: 10px;
 }
 
 skill {
     border-radius: 5px;
-    background: rgba(240, 240, 240);
+    border: 3px solid hsl(184, 63%, 64%, 40%);
+    background-color: white;
     padding: 5%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 100%;
-    justify-content:space-between ;
+    grid-template-rows: 40px;
+    justify-content: space-between;
+    vertical-align: center;
 }
 
 .skill-image {
-    margin: 1px;
+    /* margin: 1px; */
     height: 100%;
+}
+
+skill p {
+    vertical-align: middle;
+    margin: auto;
 }
