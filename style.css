@@ -2,7 +2,6 @@
     --skillWidth: max(min(24%, 200px), 175px);
     --skillHeight: 40px;
     --my-blue: hsl(184, 63%, 80%);
-    --mlHeight: 80%;
 }
 
 html, body, main {
@@ -50,7 +49,7 @@ nav div.navbar-nav {
     display: flex;
     border-radius: 10px;
     width: min(100%, 700px);
-}
+  }
   
 .my-card-img {
     max-height: 200px;
@@ -63,13 +62,17 @@ nav div.navbar-nav {
     
 }
 .about-image-container {
-    display: block;
+    /* display: block; */
     height: 100%;
+}
+.about-image-container#top {
+    display: none;
 }
 
 .about-text {
-    display: block;
+    /* display: block; */
     transform: translateX(-15%); /* additional 50% of own height */
+    padding: 2vh;
 }
 
 .section-header {
@@ -81,12 +84,11 @@ nav div.navbar-nav {
 .skills-grid {
     display: grid;
     grid-template-columns: var(--skillWidth) var(--skillWidth) var(--skillWidth) var(--skillWidth);
-    grid-template-rows: 12% 12% 12% 12% 12% 12%;
+    /* grid-template-rows: 12% 12% 12% 12%; */
     gap: 10px;
 }
 
 skill {
-    display: inline-block;
     border-radius: 5px;
     border: 3px solid hsl(184, 63%, 64%, 40%);
     background-color: white;
@@ -99,6 +101,7 @@ skill {
 }
 
 .skill-image {
+    /* margin: 1px; */
     height: 100%;
 }
 
@@ -110,5 +113,48 @@ skill p {
 @media screen and (max-width:900px) {
     .skills-grid {
         grid-template-columns: var(--skillWidth) var(--skillWidth) var(--skillWidth);
+    }
+    :root {
+        --skillWidth: 33%;
+    }
+    .my-card-img {
+        align-self:center;
+        transform: translateY(-50%); /* additional 50% of own height */
+        
+        
+    }
+    .about-image-container {
+        justify-content: center;
+    }
+    .about-image-container#top {
+        position: relative; /* since some child is absolute */
+        margin: 70px;
+        display: block;
+    }
+    .about-image-container#bottom {
+        display: false;
+    }
+      
+    .my-card-img {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        width: 100px; height: 100px;
+        transform: translateY(50%); /* additional 50% of own height */
+        box-shadow: 0 0 0 6px var(--my-blue);
+        
+    }
+
+    .about-card {
+        margin: 0;
+        display: block;
+    }
+
+    .about-text {
+        transform: none;
+        padding-top: 3vh;
     }
 }
