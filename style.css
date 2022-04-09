@@ -2,6 +2,7 @@
     --skillWidth: max(min(24%, 200px), 175px);
     --skillHeight: 40px;
     --my-blue: hsl(184, 63%, 80%);
+    --mlHeight: 80%;
 }
 
 html, body, main {
