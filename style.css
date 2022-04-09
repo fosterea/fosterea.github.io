@@ -29,7 +29,7 @@ nav div.navbar-nav {
 } */
 
 .section-inner {
-    padding: 5% 0 5% 0;
+    padding: 5% 0 10% 0;
     width: 80%;
     margin: auto;
 }
@@ -114,7 +114,11 @@ skill p {
     margin: auto;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1050px) {
+    .section-inner {
+        padding: 10% 0 20% 0;
+    }
+
     .skills-grid {
         grid-template-columns: var(--skillWidth) var(--skillWidth);
         row-gap: 1.33%;
