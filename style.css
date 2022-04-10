@@ -10,15 +10,18 @@ html, body, main {
     padding: 0;
 }
 
-main {
-    padding-top: 30px;
-}
+
+body {
+    position: relative;
+  }
 
 #navbar-override {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     z-index: 2;
+    justify-content: space-between;
+    padding: auto 1vh auto 3vh;
 }
 
 nav div.navbar-nav {

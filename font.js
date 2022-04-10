@@ -1,6 +1,10 @@
-// // Changes the css to customize for phones
+// Changes the css to customize for phones
 
-// document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
+
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-ovveride'
+      })
 
 //     if (navigator.userAgent.match(/Android/i) //I copied this if statement from https://redstapler.co/detect-mobile-device-with-javascript/
 //     || navigator.userAgent.match(/webOS/i) //This if statment is true if the website is being run in a mobile browser
@@ -17,4 +21,4 @@
 //     //Sets the font-size of the page if not on mobile
     
 //   }
-// });
+});
