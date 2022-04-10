@@ -124,7 +124,7 @@ skill p {
 
 .project {
     width: var(--componentWidth);
-    margin: 3% auto 3% auto;
+    margin: 5% auto 20% auto;
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
     display: grid;
@@ -227,12 +227,20 @@ skill p {
     }
     .project-img-holder {
         margin: 4vh auto 4vh auto;
-        max-height: 50%;
+        max-height: 400px;
+        max-width: 400px;
     }
     .project-img {
         margin: auto;
         max-height: none;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .project-img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
