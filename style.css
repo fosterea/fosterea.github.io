@@ -33,7 +33,7 @@ nav div.navbar-nav {
 } */
 
 .section-inner {
-    padding: 5% 0 10% 0;
+    padding: 10% 0 10% 0;
     width: 80%;
     margin: auto;
 }
@@ -170,7 +170,7 @@ skill p {
 /* Resizes for smaller screens */
 @media screen and (max-width:1050px) {
     .section-inner {
-        padding: 15% 0 20% 0;
+        padding: 20% 0 20% 0;
     }
 
     .skills-grid {
