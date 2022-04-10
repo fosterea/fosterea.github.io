@@ -2,6 +2,7 @@
     --skillWidth: 24%;
     --skillHeight: 40px;
     --my-blue: hsl(184, 63%, 80%);
+    --componentWidth: min(100%, 800px);
 }
 
 html, body, main {
@@ -48,11 +49,11 @@ nav div.navbar-nav {
     background-color: var(--my-blue);
     display: flex;
     border-radius: 10px;
-    width: min(100%, 800px);
+    width: var(--componentWidth);
   }
   
 .my-card-img {
-    max-height: 200px;
+    max-height: 190px;
     align-self: flex-end;
     margin: 12.5% 0 12.5% 0;
     border-radius: 50%;
@@ -115,9 +116,58 @@ skill p {
     margin: auto;
 }
 
+
+/* Project CSS */
+#projects:hover {
+    background-color: white;
+}
+
+.project {
+    width: var(--componentWidth);
+    margin: 3% auto 3% auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
+    display: grid;
+    grid-template-columns: 40% 60%; /* Chaged to rows on phones */
+    padding: 1%;
+    min-height: 300px;
+}
+
+.project:hover {
+    background-color: aliceblue;
+}
+
+.project-img-holder {
+    margin: auto;
+}
+
+.project-img {
+    margin: 0 10% 0 10%;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.project-text-btn {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding: 1vh .5vh 1vh 0;
+}
+
+.project-btns {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.project-btn {
+    margin-right: .7vh;
+}
+
+/* Resizes for smaller screens */
 @media screen and (max-width:1050px) {
     .section-inner {
-        padding: 10% 0 20% 0;
+        padding: 15% 0 20% 0;
     }
 
     .skills-grid {
@@ -168,5 +218,21 @@ skill p {
     .skill-image {
         max-height: 100%;
         max-width: 80%;
+    }
+
+    .project {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 2.5vh;
+    }
+    .project-img-holder {
+        margin: 4vh auto 4vh auto;
+        max-height: 50%;
+    }
+    .project-img {
+        margin: auto;
+        max-height: none;
+        max-width: 400px;
+        max-height: 400px;
     }
 }
