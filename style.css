@@ -121,9 +121,9 @@ skill p {
 
 
 /* Project CSS */
-#projects:hover {
+/* #projects:hover {
     background-color: white;
-}
+} */
 
 .project {
     width: var(--componentWidth);
@@ -136,8 +136,9 @@ skill p {
     min-height: 300px;
 }
 
-.project:hover {
-    background-color: aliceblue;
+.project {
+    /* background-color: aliceblue; */
+    background-color: white;
 }
 
 .project-img-holder {
