@@ -199,7 +199,7 @@ skill p {
         right: 0;
         bottom: 0;
         border-radius: 50%;
-        width: 100px; height: 100px;
+        width: 125px; height: 125px;
         transform: translateY(50%); /* additional 50% of own height */
         box-shadow: 0 0 0 6px var(--my-blue);
         
@@ -253,4 +253,10 @@ skill p {
         margin: .7vh;
     }
 
+}
+
+@media screen and (min-width:1050px) {
+    .project-text {
+        padding-top: 3vh;
+    }
 }
