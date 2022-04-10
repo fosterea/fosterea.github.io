@@ -170,7 +170,7 @@ skill p {
 /* Resizes for smaller screens */
 @media screen and (max-width:1050px) {
     .section-inner {
-        padding: 20% 0 20% 0;
+        padding: 25% 0 20% 0;
     }
 
     .skills-grid {
