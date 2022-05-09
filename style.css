@@ -5,6 +5,13 @@
     --componentWidth: min(100%, 800px);
 }
 
+
+a {
+    color: #1f4ba3;
+    font-weight: bold;
+}
+  
+
 html, body, main {
     margin: 0;
     padding: 0;
